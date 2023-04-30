@@ -61,13 +61,7 @@
             background-color:white;
             text-align:center;
         }
-        #reg-form {
-            height: 200px;
-            width: 50%;
-            border: 20px solid transparent;
-            border-image: url('g.jpg') 30 round;
-            text-align: center;
-        }
+       
         *{
             box-sizing:border-box;
         }
