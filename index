@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Shoes Inventory </title>
+    <style>
+        body {
+            
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 150%;
+            background-color:antiquewhite;
+           
+        }
+        .background-image {
+            background-image: url('x.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
+        h1 {
+            text-transform:uppercase;
+            text-decoration: underline;
+            text-align: center;
+            background-color: red;
+        }
+        .slider{
+            width:1200px;
+            height:700px;
+            background:url(shoes.jpg);
+            margin:100px auto;
+            animation:slide 20s infinite;
+        }
+        @keyframes slide{
+            25%{
+                background:url(a.jpg);
+            }
+            50% {
+                background: url(b.jpg);
+            }
+            75% {
+                background: url(c.jpg);
+            }
+            100% {
+                background: url(e.jpg);
+            }
+        }
+   
+        p::first-letter {
+            color: #ff0000;
+            font-size: 200%;
+        }
+
+        p::first-line {
+            text-decoration:overline underline;
+            font-weight:bold;
+        }
+        h6{
+            font-size:xx-large;
+            background-color:white;
+            text-align:center;
+        }
+        #reg-form {
+            height: 200px;
+            width: 50%;
+            border: 20px solid transparent;
+            border-image: url('g.jpg') 30 round;
+            text-align: center;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        .column{
+            float:left;
+            width:33.3%;
+            padding:5px;
+        }
+        .row::after{
+            content:"";
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <h1> your favourite place</h1>
+    <div class="slider"></div>
+    <p> Shoes Inventory:-<br> It is a small business. It begins on2023. So, I build a website to make the business know easier. <br> Show your trendy and fashionable shoes in EGYPT.All males and females footwear fashion needs in one place  with afforadable prices.</p>
+    <br>
+    <div align="center">
+        <div class="row">
+            <div class=" column">
+                <img src="a.jpg" height="150" width="150" alt="oops my image does not load"> <div> 100 L.E </div><input type="button" value="Add to the basket" onclick="msg()"/>
+            </div>
+            <div class="column">
+                <img src="b.jpg" height="150" width="150" alt="oops my image does not load"><div> 150 L.E </div><input type="button" value="Add to the basket" onclick="msg1()" />
+            </div>
+            <div class="column">
+                <img src="c.jpg" height="150" width="150" alt="oops my image does not load"> <div> 200 L.E </div><input type="button" value="Add to the basket"onclick="msg2()" />
+            </div>
+            <div class="column">
+                <img src="d.jpg" height="150" width="150" alt="oops my image does not load"> <div> 250 L.E </div><input type="button" value="Add to the basket" onclick="msg3()"/>
+            </div>
+            <div class="column">
+                <img src="e.jpg" height="150" width="150" alt="oops my image does not load"> <div> 300 L.E </div><input type="button" value="Add to the basket" onclick="msg4()" />
+            </div>
+            <div class="column">
+                <img src="f.jpg" height="150" width="150" alt="oops my image does not load">  <div>  350 L.E </div><input type="button" value="Add to the basket" onclick="msg4()" />
+            </div>
+            <div class="column">
+                <img src="x2.jpg" height="150" width="150" alt="oops my image does not load">  <div> 400 L.E </div><input type="button" value="Add to the basket"onclick="msg5()" />
+            </div>
+            <div class="column">
+                <img src="y.jpg" height="150" width="150" alt="oops my image does not load">  <div>  450 L.E </div><input type="button" value="Add to the basket" onclick="msg6()"/>
+            </div>
+            <div class="column">
+                <img src="z.jpg" height="150" width="150" alt="oops my image does not load">  <div>  500 L.E </div><input type="button" value="Add to the basket" onclick="msg7()"/>
+            </div>
+        </div>
+    </div>
+    <script>
+        function msg(){
+            var v = prompt('What do you choose');
+            alert("1--"+v);
+
+        }
+    </script>
+    
+   
+
+</body>
+</html>
